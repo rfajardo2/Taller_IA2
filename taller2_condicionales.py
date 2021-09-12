@@ -211,12 +211,41 @@ else:
     print(f"El subtotal es: ${total_pagar_descuento7:,}")
 
 
+# 8.Una empresa quiere hacer una compra de varias piezas de la misma
+# clase a una fábrica de refacciones. La empresa, dependiendo del
+# monto total de la compra, decidirá que hacer para pagar al fabricante.
+# Si el monto total de la compra excede de $500.000 la empresa tendrá
+# la capacidad de invertir de su propio dinero un 55% del monto de la
+# compra, pedir prestado al banco un 30% y el resto lo pagará
+# solicitando un crédito al fabricante. Si el monto total de la compra no
+# excede de $500.00 la empresa tendrá capacidad de invertir de su
+# propio dinero un 70% y el restante 30% lo pagará solicitando crédito
+# al fabricante. El fabricante cobra por concepto de interes un 20%
+# sobre la cantidad que se le pague a crédito. Obtener la cantidad a
+# inverir, valor del préstamo, valor del crédito y los intereses.
 
 
+cantidad_piesas8 = int(input("Digite el numero de piezas: "))
+precio_piesas8 = float(input("Digite el costo de la pieza: $"))
 
+sub_total8 = cantidad_piesas8 * precio_piesas8
+inversion8 = 0.0
+banco8 = 0.0
+credito8 = 0.0
+if(sub_total8 > 500000):
+    inversion8 = sub_total8 * 0.55
+    banco8 = sub_total8 * 0.30
+    credito8 = sub_total8 * 0.15
+else:
+    inversion8 = sub_total8 * 0.70
+    banco8 = 0
+    credito8 = sub_total8 * 0.30
+interes8 = credito8 * 0.20
 
-
-
+print(f"La inversion es de: ${inversion8:,}")
+print(f"El prestamo del banco es de: ${banco8:,}")
+print(f"El credito a pagar es por: ${credito8:,}")
+print(f"El interes por el credito es: ${interes8:,}")
 
 
 
