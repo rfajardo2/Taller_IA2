@@ -179,7 +179,36 @@ else:
     print(f"La cantidad comprade es: {cantidad_pc6}")
 
 
+# 7. Un proveedor de estéreos ofrece un descuento del 10% sobre el
+# precio sin IVA, de algún aparato si este cuesta $2000 o más. Además,
+# independientemente de esto, ofrece un 5% de descuento si la marca
+# es NOSY. Determinar cuanto pagará, con IVA incluido, un cliente
+# cualquiera por la compra de su aparato. IVA es del 16%.
 
+
+precio_estereo7 = float(input("Digite el precio del estéreo: $"))
+marca_estero7 = (input("Digite la marca del estéreos a comprar: "))
+print("_____________________________________________________________")
+descuento_compra7 = 0.0
+descuento_marca7 = 0.0
+iva7 = 0.16
+if(precio_estereo7 < 0):
+    print("Por favor verificar datos digitados, los datos no pueden ser menor a 0")
+    print(f" precio del estéreo digitado: ${precio_estereo7:,}")
+else:
+    if(precio_estereo7 >= 2000):
+        descuento_compra7 = precio_estereo7 * 0.1
+    if(marca_estero7 == "NOSY" or marca_estero7 == "nosy"):
+        descuento_marca7 = precio_estereo7 * 0.05
+    subtotal_pagar_descuento7 = precio_estereo7 - descuento_compra7 - descuento_marca7
+    valor_iva7 = subtotal_pagar_descuento7 * iva7
+    total_pagar_descuento7 = subtotal_pagar_descuento7 + valor_iva7
+    print(f"El valor unitario es: ${precio_estereo7:,}")
+    print(f"El descuento aplicado por compra es: ${descuento_compra7:,}")
+    print(f"El descuento aplicado por marca es: ${descuento_marca7:,}")
+    print(f"El subtotal es: ${subtotal_pagar_descuento7:,}")
+    print(f"El iva(16%) es: ${valor_iva7:,}")
+    print(f"El subtotal es: ${total_pagar_descuento7:,}")
 
 
 
