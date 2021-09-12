@@ -37,7 +37,6 @@ else:
 
 precio_compra2 = float(input("Digite el total de la compra: $"))
 nuemo_azar2 = int(input("Digite un nuemro al azar mayor o igual a 0: "))
-# total_camisas_pagar = precio_camisa1 * cantidad_camisa1
 descuento = 0.0
 if(precio_compra2 < 0 or nuemo_azar2 < 0):
     print("Por favor verificar datos digitados, los datos no pueden ser menor a 0")
@@ -54,9 +53,40 @@ else:
     print(f"El valor dela compra era de: ${precio_compra2:,}")
     print(f"El nuemro al azar digitado es: {nuemo_azar2}")
 
-  
-    
-  
+
+# 3.Una compañía de seguros está abriendo un departamento de
+# finanzas y estableció un programa para captar clientes, que conssite
+# en lo siguiente: Si el monto por el que se efectúa la fianza es menor
+# que $50.000 la cuota a pagar será por el 3% del monto, y si el monto
+# es mayor que $50.000 la cuota a pagar será el 2% del monto. La
+# afianzadora desea determinar cual será la cuota que debe pagar al
+# cliente.
+
+
+monto3 = float(input("Digite el total del monto a financir: $"))
+if(monto3 < 0):
+    print("verificar datos digitados, los datos no pueden ser menor a 0")
+    print(f" monto a financir: ${monto3:,}")
+else:
+    porcentaje_cuota = 0.0
+    if(monto3 < 50000):
+        porcentaje_cuota = 0.03
+    else:
+        porcentaje_cuota = 0.02
+    cuota = monto3 * porcentaje_cuota
+    print(f"El total del monto a financir es: ${monto3:,}")
+    print(f"El porcentaje aplicado es: {porcentaje_cuota}")
+    print(f"El valor de la cuota es: ${cuota:,}")
+
+
+
+
+
+
+
+
+
+
     
   
     
