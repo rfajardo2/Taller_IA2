@@ -248,6 +248,35 @@ print(f"El credito a pagar es por: ${credito8:,}")
 print(f"El interes por el credito es: ${interes8:,}")
 
 
+# 9. Leer 2 números; si son iguales que lo multiplique, si el primero es
+# mayor que el segundo que los reste y sino que los sume.
+
+
+primer_numero9 = float(input("Digite el primer numero:"))
+segundo_numero9 = float(input("Digite el segundo numero:"))
+
+resultado9 = 0
+if(primer_numero9 == segundo_numero9):
+    resultado9 = primer_numero9 * segundo_numero9
+    operador9 = "*"
+else:
+    if(primer_numero9 < segundo_numero9):
+        resultado9 = primer_numero9 + segundo_numero9
+        operador9 = "+"
+    else:
+        resultado9 = primer_numero9 - segundo_numero9
+        operador9 = "-"
+print(f"{primer_numero9} {operador9} {segundo_numero9} = {resultado9}")
+
+
+
+
+
+
+
+
+
+
 
 
 
