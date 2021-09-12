@@ -269,7 +269,23 @@ else:
 print(f"{primer_numero9} {operador9} {segundo_numero9} = {resultado9}")
 
 
+# 10.Leer tres números diferentes e imprimir el número mayor de los tres.
 
+primer_numero10 = float(input("Digite el primer numero:"))
+segundo_numero10 = float(input("Digite el segundo numero:"))
+tercer_numero10 = float(input("Digite el tercer numero:"))
+
+if(primer_numero10 > segundo_numero9 and primer_numero10 > tercer_numero10):
+    mayor10 = primer_numero10
+    print(f"El numero mayor es: {mayor10}")
+elif(segundo_numero9 > primer_numero10 and segundo_numero9 > tercer_numero10):
+    mayor10 = segundo_numero9
+    print(f"El numero mayor es: {mayor10}")
+elif(tercer_numero10 > primer_numero10 and tercer_numero10 > segundo_numero9):
+    mayor10 = tercer_numero10
+    print(f"El numero mayor es: {mayor10}")
+else:
+    print("los numeros son iguales")
 
 
 
