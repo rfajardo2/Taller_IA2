@@ -63,10 +63,10 @@ else:
 # cliente.
 
 
-monto3 = float(input("Digite el total del monto a financir: $"))
+monto3 = float(input("Digite el total del monto a financiar: $"))
 if(monto3 < 0):
     print("verificar datos digitados, los datos no pueden ser menor a 0")
-    print(f" monto a financir: ${monto3:,}")
+    print(f" monto a financiar: ${monto3:,}")
 else:
     porcentaje_cuota = 0.0
     if(monto3 < 50000):
@@ -74,11 +74,56 @@ else:
     else:
         porcentaje_cuota = 0.02
     cuota = monto3 * porcentaje_cuota
-    print(f"El total del monto a financir es: ${monto3:,}")
+    print(f"El total del monto a financiar es: ${monto3:,}")
     print(f"El porcentaje aplicado es: {porcentaje_cuota}")
     print(f"El valor de la cuota es: ${cuota:,}")
 
 
+# 4. Una fábrica ha sido sometida a un programa de control de
+# contaminación para lo cual se efectúa una revisión de los puntos de
+# contaminación generados por la fábrica. El programa de control de
+# contaminación consiste en medir los puntos que emite la fábrica en
+# cinco días de una semana y si el promedio es superior a los 170
+# puntos entonces tendrá la sanción de parar su producción por una
+# semana y una multa del 50% de las ganancias diarias cuando no se
+# detiene la producción. Si el promedio obtenido de puntos es de 170 o
+# menos entonces no tendrá ni sanción ni multa. El dueño de la fábrica
+# desea saber cuanto dinero perderá después de ser sometido a la
+# revisión.
+
+
+putos_primer_dia4 = float(input("Digite los punto del dia #1: "))
+putos_segundo_dia4 = float(input("Digite los punto del dia #2: "))
+putos_tercer_dia4 = float(input("Digite los punto del dia #3: "))
+putos_cuarto_dia4 = float(input("Digite los punto del dia #4: "))
+putos_quinto_dia4 = float(input("Digite los punto del dia #5: "))
+print("_____________________________________________________________")
+ganancias_primer_dia4 = float(input("Digite las ganacias del dia #1: "))
+ganancias_segundo_dia4 = float(input("Digite las ganacias del dia #2: "))
+ganancias_tercer_dia4 = float(input("Digite las ganacias del dia #3: "))
+ganancias_cuarto_dia4 = float(input("Digite las ganacias del dia #4: "))
+ganancias_quinto_dia4 = float(input("Digite las ganacias del dia #5: "))
+print("_____________________________________________________________")
+promedio4 = (putos_primer_dia4 + putos_segundo_dia4 + putos_tercer_dia4 + putos_cuarto_dia4 + putos_quinto_dia4) / 5
+ganancia_semana4 = (ganancias_primer_dia4 + ganancias_segundo_dia4 + ganancias_tercer_dia4 + ganancias_cuarto_dia4 + ganancias_quinto_dia4)
+multa4 = 0.0
+if(putos_primer_dia4 < 0
+   or putos_segundo_dia4 < 0
+   or putos_tercer_dia4 < 0
+   or putos_cuarto_dia4 < 0
+   or putos_quinto_dia4 < 0
+   or ganancias_primer_dia4 < 0
+   or ganancias_segundo_dia4 < 0
+   or ganancias_tercer_dia4 < 0
+   or ganancias_cuarto_dia4 < 0
+   or ganancias_quinto_dia4 < 0):
+    print("Por favor verificar datos digitados, los datos no pueden ser menor a 0")
+else:
+    if(promedio4 > 170):
+        multa4 = ganancia_semana4 * 0.05
+    print(f"El promedio de puntos es: {promedio4}")
+    print(f"Las ganancias en la semana fueron de: ${ganancia_semana4:,}")
+    print(f"La multa por la revision es de: ${multa4:,}")
 
 
 
@@ -87,8 +132,7 @@ else:
 
 
 
-    
-  
-    
-  
-    
+
+
+
+
