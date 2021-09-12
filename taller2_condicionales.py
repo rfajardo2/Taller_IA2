@@ -11,20 +11,20 @@ Created on Sun Sep 12 09:39:39 2021
 
 precio_camisa1 = float(input("Digite el precio de la camisa: $"))
 cantidad_camisa1 = int(input("Digite cantidad de la camisa a comprar: "))
-total_camisas_pagar = precio_camisa1 * cantidad_camisa1
-descuento = 0.0
+total_camisas_pagar1 = precio_camisa1 * cantidad_camisa1
+descuento1 = 0.0
 if(precio_camisa1 < 0 or cantidad_camisa1 < 0):
     print("Por favor verificar datos digitados, los datos no pueden ser menor a 0")
     print(f" precio de la camisa digitado: ${precio_camisa1:,}")
     print(f" cantidad de la camisa digitado:{cantidad_camisa1}")
 else:
     if(cantidad_camisa1 >= 3):
-        descuento = total_camisas_pagar * 0.3
+        descuento1 = total_camisas_pagar1 * 0.3
     else:
-        descuento = total_camisas_pagar * 0.1
-    total_camisas_pagar_descuento = total_camisas_pagar - descuento
-    print(f"El total a pagar es: ${total_camisas_pagar_descuento:,}")
-    print(f"El descuento aplicado es: ${descuento:,}")
+        descuento1 = total_camisas_pagar1 * 0.1
+    total_camisas_pagar_descuento1 = total_camisas_pagar1 - descuento1
+    print(f"El total a pagar es: ${total_camisas_pagar_descuento1:,}")
+    print(f"El descuento aplicado es: ${descuento1:,}")
     print(f"El valor unitario es: ${precio_camisa1:,}")
     print(f"La cantidad comprade es: {cantidad_camisa1}")
 
@@ -37,19 +37,19 @@ else:
 
 precio_compra2 = float(input("Digite el total de la compra: $"))
 nuemo_azar2 = int(input("Digite un nuemro al azar mayor o igual a 0: "))
-descuento = 0.0
+descuento2 = 0.0
 if(precio_compra2 < 0 or nuemo_azar2 < 0):
     print("Por favor verificar datos digitados, los datos no pueden ser menor a 0")
     print(f" precio de la compra ${precio_compra2:,}")
     print(f" nuemro al azar digitado:{nuemo_azar2}")
 else:
     if(nuemo_azar2 < 74):
-        descuento = precio_compra2 * 0.15
+        descuento2 = precio_compra2 * 0.15
     else:
-        descuento = precio_compra2 * 0.2
-    total_a_pagar_descuento = precio_compra2 - descuento
-    print(f"El total a pagar es: ${total_a_pagar_descuento:,}")
-    print(f"El descuento aplicado es: ${descuento:,}")
+        descuento2 = precio_compra2 * 0.2
+    total_a_pagar_descuento2 = precio_compra2 - descuento2
+    print(f"El total a pagar es: ${total_a_pagar_descuento2:,}")
+    print(f"El descuento aplicado es: ${descuento2:,}")
     print(f"El valor dela compra era de: ${precio_compra2:,}")
     print(f"El nuemro al azar digitado es: {nuemo_azar2}")
 
@@ -68,15 +68,15 @@ if(monto3 < 0):
     print("verificar datos digitados, los datos no pueden ser menor a 0")
     print(f" monto a financiar: ${monto3:,}")
 else:
-    porcentaje_cuota = 0.0
+    porcentaje_cuota3 = 0.0
     if(monto3 < 50000):
-        porcentaje_cuota = 0.03
+        porcentaje_cuota3 = 0.03
     else:
-        porcentaje_cuota = 0.02
-    cuota = monto3 * porcentaje_cuota
+        porcentaje_cuota3 = 0.02
+    cuota3 = monto3 * porcentaje_cuota3
     print(f"El total del monto a financiar es: ${monto3:,}")
-    print(f"El porcentaje aplicado es: {porcentaje_cuota}")
-    print(f"El valor de la cuota es: ${cuota:,}")
+    print(f"El porcentaje aplicado es: {porcentaje_cuota3}")
+    print(f"El valor de la cuota es: ${cuota3:,}")
 
 
 # 4. Una fábrica ha sido sometida a un programa de control de
@@ -146,6 +146,52 @@ if(decremento5 < incremento5):
     print("Te conviene comprar el Automovil")
 else:
     print("Te conviene comprar el terreno")
+
+
+# 6. En una fábrica de computadoras se planea ofrecer a los clientes un
+# descuento que dependerá del número de computadoreas que
+# compre. Si las computadoras son menos de cinco se les dará un 10%
+# de descuento sobre el total de la compra; si el número de
+# computadoras es mayor o igual a cinco pero menos de diez se le
+# otorga un 20% de descuento; y si son 10 o más se les da un 40%. El
+# precio de cada computadora es de $11.000.
+
+
+precio_pc6 = 11000
+cantidad_pc6 = int(input("Digite cantidad de computadoras a comprar: "))
+total_pc_pagar6 = precio_camisa1 * cantidad_camisa1
+descuento6 = 0.0
+if(precio_pc6 < 0):
+    print("Por favor verificar datos digitados, los datos no pueden ser menor a 0")
+    print(f" cantidad de las computadoras digitado:{cantidad_pc6}")
+else:
+    if(cantidad_pc6 < 5):
+        descuento6 = total_pc_pagar6 * 0.1
+    elif(cantidad_pc6 >= 5 and cantidad_pc6 < 10):
+        descuento6 = total_pc_pagar6 * 0.2
+    else:
+        descuento6 = total_pc_pagar6 * 0.4
+    total_cp_pagar_descuento = total_pc_pagar6 - descuento6
+    print("_____________________________________________________________")
+    print(f"El total a pagar es: ${total_cp_pagar_descuento:,}")
+    print(f"El descuento aplicado es: ${descuento6:,}")
+    print(f"El valor unitario es: ${precio_pc6:,}")
+    print(f"La cantidad comprade es: {cantidad_pc6}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
