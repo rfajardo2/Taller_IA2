@@ -120,7 +120,7 @@ if(putos_primer_dia4 < 0
     print("Por favor verificar datos digitados, los datos no pueden ser menor a 0")
 else:
     if(promedio4 > 170):
-        multa4 = ganancia_semana4 * 0.05
+        multa4 = ganancia_semana4 * 0.5
     print(f"El promedio de puntos es: {promedio4}")
     print(f"Las ganancias en la semana fueron de: ${ganancia_semana4:,}")
     print(f"La multa por la revision es de: ${multa4:,}")
